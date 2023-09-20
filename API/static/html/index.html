@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>API</title>
+</head>
+<body>
+    
+    <header>
+        <h2>Routes description</h2>
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <td>HTTP Methods</td>
+                    <td>Path</td>
+                    <td>Description</td>
+                </tr>
+            </thead>
+            <tr>
+                <td>GET</td>
+                <td>/</td>
+                <td>Takes you to homepage</td>
+            </tr>
+            <tr>
+                <td>GET</td>
+                <td>/users</td>
+                <td>Gives back an array of all users</td>
+            </tr>
+            <tr>
+                <td>GET</td>
+                <td>/users/:id</td>
+                <td>Gives back an object of the user with matching ID</td>
+            </tr>
+            <tr>
+                <td>POST</td>
+                <td>/register</td>
+                <td>Encrypts password, saves successfully in DB, and gives back a JWT</td>
+            </tr>
+            <tr>
+                <td>PATCH/PUT</td>
+                <td>/users/:id</td>
+                <td>Updates user successfully (including encrypting password if one is given)</td>
+            </tr>
+            <tr>
+                <td>POST</td>
+                <td>/login</td>
+                <td>Checks for users in DB by email and compares passwords correctly. JWT is sent back.</td>
+            </tr>
+            <tr>
+                <td>DELETE</td>
+                <td>/user/:id</td>
+                <td>Removes user from database</td>
+            </tr>
+            <tr>
+                <td>GET</td>
+                <td>/items</td>
+                <td>Gives back an array of all items</td>
+            </tr>
+            <tr>
+                <td>GET</td>
+                <td>/item/:id</td>
+                <td>Gives back an object of the item with a matching ID</td>
+            </tr>
+            <tr>
+                <td>POST</td>
+                <td>/items</td>
+                <td>Saves items in database</td>
+            </tr>
+            <tr>
+                <td>PUT</td>
+                <td>/item/:id</td>
+                <td>Updates an item by an authenticated user</td>
+            </tr>
+            <tr>
+                <td>DELETE</td>
+                <td>/item/:id</td>
+                <td>Removes the product from database by an authenticated user</td>
+            </tr>
+            <tr>
+                <td>GET</td>
+                <td>/user/:id/carts</td>
+                <td>Authorized user can now retrieve all items added</td>
+            </tr>
+            <tr>
+                <td>POST</td>
+                <td>/user/:id/cart</td>
+                <td>Authorized user can add an item to the cart</td>
+            </tr>
+            <tr>
+                <td>PATCH</td>
+                <td>/user/:id/cart</td>
+                <td>Authorized user can update an item in the cart.</td>
+            </tr>
+            <tr>
+                <td>DELETE</td>
+                <td>/user/:id/cart</td>
+                <td>Authorised user can delete all items from cart</td>
+            </tr>
+            <tr>
+                <td>DELETE</td>
+                <td>/user/:id/cart/:id</td>
+                <td>Authorized user can delete a specific item from the cart</td>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>

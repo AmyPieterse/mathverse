@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+header{
+    height: 9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header h2{
+    font-size: 32px;
+}
+main{
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table{
+    border: 3px solid #355C7D;
+    border-collapse: collapse;
+    margin: 25px 0;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+thead tr{
+    background-color: #355C7D;
+    color: #ffffff;
+    text-align: left;
+}
+tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+th,td{
+    padding: 12px 15px;
+}
+tr,td{
+    border: 3px solid #355C7D;
+}
